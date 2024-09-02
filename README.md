@@ -64,6 +64,19 @@ same query for silver and bronze medal athlete.
     Higest medal country = VAR MEDAL = MAX('medals_total csv'[Total])
     RETURN
     CALCULATE(VALUES('medals_total csv'[country_code]),'medals_total csv'[Total]>=MEDAL)
+#### creating a column for age group. 
+    age category = 
+    SWITCH(
+    TRUE(),
+    'athletes csv'[age]>=15 && 'athletes csv'[age]<=20 ,"15-20",
+    'athletes csv'[age] >20 && 'athletes csv'[age] <=25,"21-25",
+    'athletes csv'[age] >25 && 'athletes csv'[age] <=30,"26-30",
+    'athletes csv'[age] >30 && 'athletes csv'[age] <=35,"31-35",
+    'athletes csv'[age] >35 && 'athletes csv'[age] <=40,"36-40",
+    'athletes csv'[age] >40 && 'athletes csv'[age] <=45,"41-45",
+    'athletes csv'[age] >45 && 'athletes csv'[age] <=50,"46-50",
+    'athletes csv'[age] > 50,"50+",
+    "Under 15")
 #### For key highlights.
     highlights = "Total athletes "&[Total athletes]&" with "&[Total male athletes]&" male and "&[Total female athletes]&" female participants.
     The male won "&[total gold won_by_male atheles]&" gold medals and the female won "&[total gold won_by_female atheles]&" gold medals in the tournament.
@@ -73,7 +86,12 @@ same query for silver and bronze medal athlete.
     Female got "&[total gold won_by_female atheles]&" Gold medals."
 Same query for Silver and Bronze medals 
 
-####
+# Key Insights of Paris olymmpic 2024.
+206 country participate in this olympic games.
+Out of 11113 Athletes their are 5658 males where 5455 are female athletes.
+USA was the highest medal winning country.
+Total goldmedalist are 752 where 374 are male and 378 are female athletes.
+French Swimmer Leon Marchand wins maximum gold in this olympic games.
 
 ## 🚀 Exciting Project Alert! 🚀
 
