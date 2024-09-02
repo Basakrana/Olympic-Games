@@ -7,8 +7,30 @@
 ### Here are all the DAX queries which i used in this project.
 
 #### For total country.
-
     Country Plyaing = DISTINCTCOUNT('athletes csv'[country])
+
+#### Total Teams.
+    Playing teams = DISTINCTCOUNT('teams csv'[code])
+
+#### Total Athletes 
+    Total athletes = DISTINCTCOUNT('athletes csv'[code])
+
+#### Total Gold medals.
+    Total Gold Medals = var obj= CALCULATE(
+    COUNT('medallists csv'[medal_code]),    
+    'medallists csv'[medal_code] =1)
+    RETURN
+    IF(ISBLANK(obj),0,obj
+Same Query for Silver and Bronze Medals only change medal codes.
+
+#### Highest medal country.
+    Higest medal country = VAR MEDAL = MAX('medals_total csv'[Total])
+    RETURN
+    CALCULATE(VALUES('medals_total csv'[country_code]),'medals_total csv'[Total]>=MEDAL)
+#### For key highlights.
+    highlights = "Total athletes "&[Total athletes]&" with "&[Total male athletes]&" male and "&[Total female athletes]&" female participants. The male won "&[total gold won_by_male atheles]&" gold medals and the female won "&[total gold won_by_female atheles]&" gold medals in the tournament. Country "&[Higest medal country]&" is the highest performing country in the tournament."
+#### Gold highlight.
+    gold highlights = "Total "&[Total Gold Medals]&" where Male got "&[total gold won_by_male atheles]&" Gold medals and Female got "&[total gold won_by_female atheles]&" Gold medals."
 
 ## 🚀 Exciting Project Alert! 🚀
 
