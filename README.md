@@ -88,9 +88,13 @@ Same query for Silver and Bronze medals
 
 # Key Insights of Paris olymmpic 2024.
 206 country participate in this olympic games.
+
 Out of 11113 Athletes their are 5658 males where 5455 are female athletes.
+
 USA was the highest medal winning country.
+
 Total goldmedalist are 752 where 374 are male and 378 are female athletes.
+
 French Swimmer Leon Marchand wins maximum gold in this olympic games.
 
 
