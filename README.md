@@ -93,20 +93,4 @@ USA was the highest medal winning country.
 Total goldmedalist are 752 where 374 are male and 378 are female athletes.
 French Swimmer Leon Marchand wins maximum gold in this olympic games.
 
-## 🚀 Exciting Project Alert! 🚀
 
-I'm thrilled to share my latest project, where I dove deep into the Food & Beverage Market to uncover valuable insights using Power BI. 📊
-
-🌟 Project Highlights:
-
-💠 Analyzed a survey of 10,000 respondents across 10 Indian cities for CodeX, a leading German beverage company entering the Indian market.
-
-💠 Visualized data to reveal key trends and preferences in the industry, aiding CodeX in making data-driven decisions for their product launch.
-
-This project was a fantastic opportunity to apply my data analysis and visualization skills to a real-world challenge, helping a global brand succeed in a new market🌍
-
-🔗 Curious to learn more? Check out the full project here: https://lnkd.in/db6pCv2N
-
-I'm always eager to improve my skills, so if you have any suggestions or feedback, I'd love to hear from you!💡
-
-hashtag#DataScience hashtag#PowerBI hashtag#MarketInsights hashtag#DataAnalysis hashtag#FoodAndBeverage hashtag#DataVisualization hashtag#CodeX hashtag#LearningAndGrowth
