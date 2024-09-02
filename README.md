@@ -8,7 +8,7 @@
 
 #### For total country.
 
-  Country Plyaing = DISTINCTCOUNT('athletes csv'[country])
+    Country Plyaing = DISTINCTCOUNT('athletes csv'[country])
 
 ## 🚀 Exciting Project Alert! 🚀
 
